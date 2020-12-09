@@ -1,44 +1,40 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome AJ-Bankole,
+Gunners
+Gunners is a website dedicated to Arsenal Football Club. It is essentially a hub for the r/gunners subreddit.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+UX
+As I mentioned, I designed this site to be a hub for r/gunners.
 
-## Gitpod Reminders
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Reddit can be confusing if you're not a regular user- it can be hard to find the type of content that interests you. I've recommended certain subreddits to my friends, but they have struggled with the navigation of the website.
 
-`python3 -m http.server`
+The goal of this project is to bridge the gap between the subreddit's community and the wider Arsenal-supporting community by showcasing some of it's top content and providing links to certain parts of reddit which user's may be interested in.
 
-A blue button should appear to click: *Make Publi
+This website isn't exclusively a hub for r/gunners however, as there are a number of other pages which provide information about various aspects around the club.
 
-Another blue button should appear to click: *Open Browser*.
+Design
+I choose to use a simple color scheme of Red, White & Grey. Red & White are the main colors of Arsenal, so naturally these colours are a big part of the design in this project. The grey parts of the website exist to give the website it's own identity. Couple with the font choice, I tried to go for something 'very Arsenal' but quite sleek at the same time.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+User Stories:
+As an Arsenal fan, I want to have everything I need to know about the club all in the same place.
+I'd like a browser homepage that relates to my interest in Arsenal and gives me a shortcut to useful info such as upcoming fixtures.
+I'm not necessarily a reddit user, however I enjoy some content especially in regards to Arsenal; I'd like to have a streamlined version of r/gunners with which I can easily find some of the more significant posts.
+I am a reddit user, and also an Arsenal fan. Reddit can be overwhelming & distracting sometimes; I'd like a shortcut to my favorite subreddit so I don't end up spending more time on the site/app than I plan to.
+Features
+Existing Features:
+Homepage - Acts as a streamlined r/gunners. Contains embedded posts from reddit and an embedded widget with the entire subreddit.
+Homepage links - Contains non-embedded links to other subreddits, and a link for non-users to sign up and join reddit.
+Fixtures page - Contains a list of upcoming fixtures for the 20/21 season.
+Squad page - Contains a list of players in the current squad.
+Official Footer - Contains links to the clubs official channels (Website, Social media), as well as links to official merchandising.
+Our Friends page - Contains links to other Arsenal fan projects, such as AFTV and Arseblog.
+Scrapped Features:
+Official page - Contains links to the clubs official channels (Website, Social media), as well as links to official merchandising. Felt archaic; decided to replace it with a footer on every page which serves the same purpose.
+Features Left to Implement
+News / Transfers - In the future i'd like to implement a regularly updated news / transfers page.
+Technologies Used
+HTML - Used to structure my website
+CSS - Used to style/design my website
+I used code from the following websites:
 
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+Reddit.com - I embedded 6 posts directly from reddit.com/r/gunners
+Redditjs.com - I embedded a widget from Redditjs in order to have a mini version of r/gunners on my homepage.
