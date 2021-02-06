@@ -1,9 +1,12 @@
 # Visit Woolwich
-Visit Woolwich is a website with the goal of promoting tourism to my local area, Woolwich, London. 
+Visit Woolwich is a website with the goal of promoting tourism to my local area, Woolwich, London. This website serves as somewhat of an introduction to the area, showing a few areas of interest & helping users plan their first visit.
 
-## User Stories
+# UX
+I've seen a few 'visit' websites that are usually based around ideal holiday locations. Since I've never been on holiday & thus never had the chance to use one of these websites, I thought i'd try and make one for the area which I have spent the majority of my life in.
 
-* I am someone who likes to travel & I'd like to be guided by a local as I visit this part of London.
+# User Stories
+
+* I'm visiting Woolwich but I don't have a clue about where to start. I'd like to be guided by a local as I visit this part of London.
 
 * I'm an avid cyclist who would like to try something/somewhere new.
 
@@ -12,7 +15,7 @@ Visit Woolwich is a website with the goal of promoting tourism to my local area,
 * I'd like to know what there is to do in Woolwich, perhaps with family or friends- depending on the activies available.
 
 
-## Owner Goals
+# Owner Goals
 
 * I would like to introduce people to the cultural melting pot that is Woolwich.
 
