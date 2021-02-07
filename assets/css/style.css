@@ -3,3 +3,9 @@
     width: 100%;
 };
 
+a.navbar-brand{
+    font-family: 'permanent marker',cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    
+    
+}
