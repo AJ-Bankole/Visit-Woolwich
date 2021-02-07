@@ -11,26 +11,29 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-        a.navbar-brand{
+        .c-font-1{
             font-family: 'permanent marker', cursive;
+        }
+        .c-font-2{
+            font-family: 'Ubuntu', sans-serif;
         }
     </style>
     <title>Visit Woolwich!</title>
 </head>
 
-<body class="bg-gray-700">
+<body class="bg-dark">
 <!--Navigation bar-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top border-bottom border-white" role="navigation">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top border-bottom border-white " role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#" ">Visit Woolwich</a>
+                <a class="navbar-brand c-font-1" href="#" ">Visit Woolwich</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav-menu-collapse">
-                <ul class="navbar-nav pl-5">
+                <ul class="navbar-nav pl-5 c-font-2">
                     <li><a class="nav-item nav-link active" href="#">Home</a></li>
                     <li><a class="nav-item nav-link" href="our-map.html">Our Map</a></li>
                     <li><a class="nav-item nav-link" href="things-to-do.html">Things to do</a></li>
@@ -71,7 +74,7 @@
 <!--Welcome message-->
     <div class="jumbotron jumbotron-fluid text-center text-white bg-dark">
         <div class="container">
-            <h1 class="display-4">Welcome to Woolwich</h1>
+            <h1 class="display-4 c-font-1">Welcome to Woolwich</h1>
             <p class="lead">A district in South-east London, situated on the River Thames. Woolwich is home to a number of historical sites, intertwined with large-scale modernization to create unique area with a rich history & and potential for an even richer future.</p>
         </div>
         <p id="about-more"></p>
