@@ -4,16 +4,18 @@ $(document).ready(function(){
     });
 });
 
+let map;
+
 function initMap(){
 
-    let map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: { lat: 51.4895, lng: 0.0676 }
     });
     
-    let map2 = new google.maps.Map(document.getElementById('map2'), {
+    map = new google.maps.Map(document.getElementById('map2'), {
         zoom: 12,
-        center: { lat: 51.4895, lng: 0.0676 }
+        center: {lat:51.4895, lng:0.0676}
     });
 
     let labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -160,3 +162,6 @@ let cycleRoute4 = {
         { location: (51.48993754652197, -0.013485664849658395) }
     ]
 };
+
+
+
