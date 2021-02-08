@@ -30,13 +30,14 @@ I've seen a few 'visit' websites that are usually based around ideal holiday loc
 Complete:
 
 * 'Things to do' page- huge amount of room for improvement but currently the only page that serves a purpose.
+* Home Page was fleshed out with more content- I tried to get my point across of what i'm actually trying to do.
+* I made an interactive map with map marker that bring up information; I feel like I could have added more to this however.
+
 
 Incomplete
 
-* Home / Index page- missing content after hero-carousel.
-* Map- Map is initialised but missing content.
-* Accomodation page- Very plain, could do with some more map integration.
-* Cycling tours page- Hasn't been started yet.
+* Accomodation page- Very plain, could do with some more map integration. I found myself at somewhat of a loss because I couldn't find anymore big hotels in woolwich.
+* Cycling tours page- I spent a lot of time trying to make this work, however I just couldn't realise my idea of making interactive route maps. In the end I decided to get rid of the feature entirely because there was much to see.
 
 
 ## Technologies used:
@@ -44,10 +45,17 @@ Incomplete
 *HTML - Structure
 *CSS - Minimal, I believe there is only 1 rule used
 *Bootstrap 4.1.3 - Used for a vast majority of the styling
-*Google Maps API - Used to embed a map on my site, incomplete usage.
+*Google Maps API - Used to embed a map on my site with interactive markers. I used a lot of Google's pre-buiit code in order to get the feature working.
 
 
 ## Testing
 
-Unfortunately i've had a myraid of issues in my personal life & I haven't been able to focus on this course very much. I hate to submit such an incomplete
-project; I will absolutely need to resubmit this assignment.
+A large portion of my issues came from the Google Maps API- I kept running into slight issues with specificity which built up to the point where I decided it was in my best interest to scrap a key feature. Specifically, I had a hard time trying to create a 2nd individual map element- not matter what I tried I kept making things worse so in the end I decided to accept defeat.
+
+To be honest, this entire project is quite underwhelming in my opinion, simply because of the unnecessarily poor circumstance I initially put myself in.
+
+
+## Credits
+I directly used content from the Royal Borough of Greenwich website this the 'learn more' section on my index page. This content can be found here: https://www.royalgreenwich.gov.uk/info/200228/local_history_and_heritage/146/history_of_the_local_areas/8
+
+
