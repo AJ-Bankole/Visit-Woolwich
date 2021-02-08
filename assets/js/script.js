@@ -45,7 +45,61 @@ function initMap() {
         imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 
-    
+    google.maps.event.addDomListener(markers[0], 'click', function(){
+        $('#marker-a').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[1], 'click', function(){
+        $('#marker-b').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[2], 'click', function(){
+        $('#marker-c').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[3], 'click', function(){
+        $('#marker-d').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[4], 'click', function(){
+        $('#marker-e').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[5], 'click', function(){
+        $('#marker-f').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[6], 'click', function(){
+        $('#marker-g').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[7], 'click', function(){
+        $('#marker-h').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[8], 'click', function(){
+        $('#marker-i').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[9], 'click', function(){
+        $('#marker-j').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[10], 'click', function(){
+        $('#marker-k').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[11], 'click', function(){
+        $('#marker-l').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[12], 'click', function(){
+        $('#marker-m').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[13], 'click', function(){
+        $('#marker-n').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[14], 'click', function(){
+        $('#marker-o').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[15], 'click', function(){
+        $('#marker-p').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[16], 'click', function(){
+        $('#marker-q').collapse('toggle');
+    });
+    google.maps.event.addDomListener(markers[17], 'click', function(){
+        $('#marker-r').collapse('toggle');
+    });
+
 
     
 }
