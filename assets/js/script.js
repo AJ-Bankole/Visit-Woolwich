@@ -1,13 +1,16 @@
+var map2; 
+
 window.initMap = function () {
 
-    let map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: { lat: 51.4895, lng: 0.0676 }
     });
 
-    let labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-    let locations = [
+    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+    var locations = [
         { lat: 51.49016, lng: 0.06769 },
         { lat: 51.49121, lng: 0.06722 },
         { lat: 51.49126, lng: 0.06925 },
@@ -94,20 +97,19 @@ window.initMap = function () {
     google.maps.event.addDomListener(markers[17], 'click', function () {
         $('#marker-r').collapse('toggle');
     });
+
+
+
 };
-
-
-/*$(document).ready(function(){
+$(document).ready(function () {
     $('#about-more-btn').click(function () {
         $('#about-more').collapse('toggle');
     });
+});
 
-map2 = new google.maps.Map(document.getElementById('map2'), {
-        zoom: 12,
-        center: {lat:51.4895, lng:0.0676}
-    });
 
-let cycleRoute1 = {
+
+/*let cycleRoute1 = {
     origin: (51.49211, 0.06984),
     destination: (51.48920, 0.06409),
     travelMode: 'BICYCLING',
