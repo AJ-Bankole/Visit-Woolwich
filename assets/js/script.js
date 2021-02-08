@@ -1,21 +1,8 @@
-$(document).ready(function(){
-    $('#about-more-btn').click(function () {
-        $('#about-more').collapse('toggle');
-    });
-});
+window.initMap = function () {
 
-let map;
-
-function initMap(){
-
-    map = new google.maps.Map(document.getElementById('map'), {
+    let map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: { lat: 51.4895, lng: 0.0676 }
-    });
-    
-    map = new google.maps.Map(document.getElementById('map2'), {
-        zoom: 12,
-        center: {lat:51.4895, lng:0.0676}
     });
 
     let labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -41,16 +28,17 @@ function initMap(){
         { lat: 51.47945, lng: 0.05722 },
     ]
 
-    let markers = locations.map(function (location, i) {
+    var markers = locations.map((location, i) => {
         return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length],
         });
     });
 
-    new MarkerClusterer(map, markers, {
-        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-    });
+    new MarkerClusterer(map, markers,
+        {
+            imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        });
 
     google.maps.event.addDomListener(markers[0], 'click', function () {
         $('#marker-a').collapse('toggle');
@@ -106,13 +94,18 @@ function initMap(){
     google.maps.event.addDomListener(markers[17], 'click', function () {
         $('#marker-r').collapse('toggle');
     });
-
-    
-
 };
 
 
+/*$(document).ready(function(){
+    $('#about-more-btn').click(function () {
+        $('#about-more').collapse('toggle');
+    });
 
+map2 = new google.maps.Map(document.getElementById('map2'), {
+        zoom: 12,
+        center: {lat:51.4895, lng:0.0676}
+    });
 
 let cycleRoute1 = {
     origin: (51.49211, 0.06984),
@@ -162,6 +155,6 @@ let cycleRoute4 = {
         { location: (51.48993754652197, -0.013485664849658395) }
     ]
 };
+});
 
-
-
+*/
