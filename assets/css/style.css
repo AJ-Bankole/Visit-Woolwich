@@ -3,6 +3,11 @@
     width: 100%;
 };
 
+#map2 {
+    height: 500px;
+    width: 100%;
+};
+
 html{
     font-size: 60%;
 };
