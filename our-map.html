@@ -51,7 +51,7 @@
                     function initMap(){
                         
                         let settings = {
-                            zoom: 12,
+                            zoom: 15,
                             center: {lat:51.4895, lng:0.0676}
                         }
                         
@@ -79,6 +79,17 @@
                             {lat: 51.49933, lng: 0.06686 },
                             {lat: 51.47945, lng: 0.05722 },
                         ]
+
+                        let markers = locations.map(function(location, i){
+                            return new google.maps.Marker({
+                                position: location,
+                                label: labels[i % labels.length],
+                            });
+                        });
+
+                        new MarkerClusterer(map, markers, {
+                        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+                        });
                     }
                 </script>
             </div>        
