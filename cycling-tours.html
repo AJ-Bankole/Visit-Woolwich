@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+        .c-font-1 {
+            font-family: 'permanent marker', cursive;
+        }
+
+        .c-font-2 {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
     <title>Visit Woolwich!</title>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top border-bottom border-white" role="navigation">
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom border-white" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Visit Woolwich</a>
+                <a class="navbar-brand c-font-1" href="#">Visit Woolwich</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="navbar-toggler-icon"></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav-menu-collapse">
-                <ul class="navbar-nav pl-5">
+                <ul class="navbar-nav pl-5 c-font-2">
                     <li><a class="nav-item nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-item nav-link" href="our-map.html">Our Map</a></li>
+                    <li><a class="nav-item nav-link active" href="our-map.html">Our Map</a></li>
                     <li><a class="nav-item nav-link" href="things-to-do.html">Things to do</a></li>
                     <li><a class="nav-item nav-link" href="accomodation.html">Accomodation</a></li>
-                    <li><a class="nav-item nav-link active" href="cycling-tours.html">Cycling tours</a></li>
+                    <li><a class="nav-item nav-link" href="cycling-tours.html">Cycling tours</a></li>
                 </ul>
-            </div>    
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center c-font-2 bg-dark text-white border-bottom border-secondary"
+        style="margin-bottom: 1%; padding: 1%;">
+        <div class="container-fluid">
+            <h2 class="display-5">Cycling Tours</h2>
+            <p class="lead">What better way to get acquainted with Woolwich than to take one of our very own cycling tours? </p>
+        </div>
+    </div>
+    <div class="container-fluid" id="map-parent">
+        <div class="row justify-content-left text-white text-center c-font-2">
+            <div class="col-12 col-md-8 " id="map2"></div>
             
         </div>
-    </nav>    
-    
-   
-    
-<script src="assets/js/script.js"></script>    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-p4-q3Ctp57fYsx5IEd6JoVk70f3s2Ns&callback=initMap">
+        </script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
